@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script defer th:src="@{/js/script.js}"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a th:href="@{/}">Home</a>
+            <a th:href="@{/about}">About</a>
+            <a th:href="@{/projects}">Projects</a>
+            <a th:href="@{/contact}">Contact</a>
+        </nav>
+    </header>
+
+    <button class="dark-mode-toggle">Dark Mode</button>
+
+    
+    
+	<section class="hero">
+	    <img src="/images/profile.jpg" alt="Your Profile" class="profile-pic">
+	    <h2>Hi, I'm <span class="highlight">Prajwal Shelar</span></h2>
+	    <p id="typewriter"></p>
+	    <button id="enter-btn" class="enter-btn" onclick="navigate()">Press Enter to Know more</button>
+	    <a href="/PrajwalShelar-resume.pdf" class="btn" download>Download Resume</a>
+	</section>
+
+    
+</body>
+</html>
